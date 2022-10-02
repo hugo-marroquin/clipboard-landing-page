@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+:root {
+  /* primary-colors */
+  --strong-cyan: hsl(171, 66%, 44%);
+  --ligth-blue: hsl(233, 100%, 69%);
+  --white: hsl(0, 0%, 100%);
+  /* neutral-colors */
+  --dg-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+  --lighter-cyan: hsl(171, 66%, 40%);
+  --ligther-blue: hsl(233, 100%, 65%);
+  --elight-cyan: hsl(171, 66%, 60%);
+  --elight-blue: hsl(233, 100%, 75%);
+  --vl-grayish-blue: hsl(201, 11%, 97%);
+  /* fonts */
+  --main-font: "Bai Jamjuree", sans-serif;
+  /* 400 / 600 */
+}
+
+body {
+  background: var(--white);
+  font-family: var(--main-font);
+  color: var(--grayish-blue);
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 400;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* general styling */
+.img {
+  display: block;
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-align-center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-titles {
+  color: var(--dg-blue);
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.page-paragraphs {
+  text-align: center;
+  max-width: 65rem;
+  margin-bottom: 4rem;
+}
+
+.sections {
+  margin-top: 10rem;
+  padding: 0 4rem;
+}
+
+/* buttons */
+.buttons {
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 1.2rem 2rem;
+  border-radius: 5rem;
+  border: none;
+  color: var(--white);
+  font-size: 1.4rem;
+}
+
+.btn-ios {
+  background-color: var(--strong-cyan);
+  border-bottom: 0.25rem solid var(--lighter-cyan);
+}
+
+.btn-mac {
+  background-color: var(--ligth-blue);
+  border-bottom: 0.25rem solid var(--ligther-blue);
+}
+
+.btn-ios:hover {
+  background-color: var(--elight-cyan);
+  cursor: pointer;
+}
+
+.btn-mac:hover {
+  background-color: var(--elight-blue);
+  cursor: pointer;
+}
+
+/* header */
+.header {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(/images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  padding: 10rem 4rem 0 4rem;
+}
+
+.header .clipboard-logo {
+  width: 8rem;
+  margin-bottom: 4rem;
+}
+
+.header-section {
+  padding: 0 4rem;
+}
+
+/* main */
+.container {
+  max-width: 144rem;
+  width: 100%;
+}
+
+/* section one */
+.section-one .section-description {
+  margin-bottom: 8rem;
+  max-width: 70rem;
+}
+
+.section-one .computer-img {
+  width: 40em;
+  position: relative;
+  left: -23rem;
+}
+
+.section-one .feature-title,
+.section-one .feature-description {
+  text-align: left;
+  position: relative;
+  max-width: 38rem;
+  left: -9rem;
+}
+
+.section-one .feature-description {
+  margin-bottom: 5rem;
+}
+
+.section-one .features-section-two {
+  margin-top: 6rem;
+}
+
+/* section two */
+.section-two .section-description {
+  margin-bottom: 8rem;
+}
+.section-two .section-two-img {
+  width: 45em;
+}
+
+/* section three */
+.section-three .tools {
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.section-three .tool-img {
+  max-width: 4rem;
+  margin-bottom: 3rem;
+}
+
+.section-three .tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 37rem;
+}
+
+/* section four */
+.section-four .company-logos {
+  max-width: 10em;
+}
+
+.section-four .company-logos-wrapper {
+  align-items: center;
+  justify-content: space-around;
+  gap: 4rem;
+  max-width: 120rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* section five */
+.container .section-five {
+  margin: 15rem 0 15rem 0;
+}
+
+/* footer */
+footer {
+  background-color: var(--vl-grayish-blue);
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-container {
+  align-items: center;
+  max-width: 110rem;
+  width: 95%;
+  padding: 4rem;
+}
+
+.footer-container .clipboard-footer-logo {
+  max-width: 4rem;
+  margin-right: 10%;
+}
+
+.footer-container .contact-information {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.footer-container .links {
+  color: var(--dg-blue);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.footer-container .social-icons-wrapper {
+  align-items: flex-end;
+  gap: 3rem;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.footer-container .social-icons {
+  color: var(--dg-blue);
+  width: 2.5rem;
+  height: 2.5rem;
+  display: block;
+}
+
+.footer-container .links:hover,
+.footer-container .social-icons:hover {
+  color: var(--strong-cyan);
+  cursor: pointer;
+}
+
+/* media queries */
+@media (max-width: 60rem) {
+  /* section one */
+  .section-one .features {
+    flex-direction: column;
+  }
+
+  .section-one .features-section-two {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  .section-one .computer-img {
+    left: 0;
+    margin: auto;
+    margin-bottom: 10rem;
+    width: 35em;
+  }
+
+  .section-one .feature-title,
+  .section-one .feature-description {
+    left: 0;
+    text-align: center;
+  }
+
+  .section-one .feature-description {
+    margin-bottom: 3rem;
+  }
+
+  .section-one .features-section-two {
+    margin-top: 0;
+  }
+
+  /* section two */
+  .section-three .tools {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 40rem) {
+  /* footer */
+  .footer-container .contact-information {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 35rem) {
+  /* footer */
+  .footer-container .contact-information {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .footer-container .clipboard-footer-logo {
+    margin-right: 0;
+  }
+
+  .footer-container .social-icons-wrapper {
+    margin-left: 0;
+  }
+
+  .footer-container .logo-contact-wrapper {
+    gap: 10rem;
+  }
+}
