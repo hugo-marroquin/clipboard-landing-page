@@ -13,159 +13,217 @@
     <title>Frontend Mentor | Clipboard landing page</title>
   </head>
   <body>
-    <!-- header section -->
-    <header class="header flex-align-center-column">
-      <div class="header-section flex-align-center-column">
-        <img src="/images/logo.svg" alt="" class="clipboard-logo img" />
-        <h1 class="header-title page-titles">
-          A history of everything you copy
-        </h1>
-        <p class="header-description page-paragraphs">
-          Clipboard allows you to track and organize everything you copy.
-          Instantly access your clipboard on all your devices.
-        </p>
-        <div class="buttons flex">
-          <button class="btn btn-ios">Download for iOS</button>
-          <button class="btn btn-mac">Download for Mac</button>
+    <header class="header">
+      <div class="container padding-top-big margin-bottom-big">
+        <div class="">
+          <img
+            src="/images/logo.svg"
+            alt="Clipboard - Home"
+            class="header__logo img"
+          />
+          <h1 class="heading-primary heading-margin-bottom">
+            A history of everything you copy
+          </h1>
+          <p class="header__paragraph-wrapper">
+            Clipboard allows you to track and organize everything you copy.
+            Instantly access your clipboard on all your devices.
+          </p>
+          <div class="btn-wrapper">
+            <button type="button" class="btn btn--primary">
+              Download for iOS
+            </button>
+            <button type="button" class="btn btn--secondary">
+              Download for Mac
+            </button>
+          </div>
         </div>
       </div>
     </header>
-    <main class="container">
+    <main>
       <!-- section one -->
-      <section class="sections section-one flex-align-center-column">
-        <h2 class="section-title page-titles">Keep track of your snippets</h2>
-        <p class="section-description page-paragraphs">
-          Clipboard instantly stores any item you copy in the cloud, meaning you
-          can access your snippets immediately on all your devices. Our Mac and
-          iOS apps will help you organize everything.
-        </p>
-        <article class="features flex">
-          <section class="features-section-one">
+      <section class="container margin-bottom-big">
+        <div class="content-center-sections margin-bottom-medium">
+          <h2 class="heading-secondary heading-margin-bottom">
+            Keep track of your snippets
+          </h2>
+          <p>
+            Clipboard instantly stores any item you copy in the cloud, meaning
+            you can access your snippets immediately on all your devices. Our
+            Mac and iOS apps will help you organize everything.
+          </p>
+        </div>
+        <div class="main__features-wrapper grid-two-columns">
+          <div class="main__img-wrapper">
             <img
               src="/images/image-computer.png"
               alt=""
-              class="computer-img img"
+              class="main__feature-img img"
             />
-          </section>
-          <section class="features-section-two">
-            <div class="feature">
-              <h3 class="feature-title page-titles">Quick Search</h3>
-              <p class="feature-description page-paragraphs">
+          </div>
+          <div class="main__feature-wrapper">
+            <div class="content-feature-wrapper">
+              <h3 class="heading-tertiary heading-margin-bottom">
+                Quick Search
+              </h3>
+              <p>
                 Easily search your snippets by content, category, web address,
                 application, and more.
               </p>
             </div>
-            <div class="feature">
-              <h3 class="feature-title page-titles">iCloud Sync</h3>
-              <p class="feature-description page-paragraphs">
-                Instantly saves and syncs snippets across all your devices.
-              </p>
+            <div class="content-feature-wrapper">
+              <h3 class="heading-tertiary heading-margin-bottom">
+                iCloud Sync
+              </h3>
+              <p>Instantly saves and syncs snippets across all your devices.</p>
             </div>
-            <div class="feature">
-              <h3 class="feature-title page-titles">Complete History</h3>
-              <p class="feature-description page-paragraphs">
+            <div class="content-feature-wrapper">
+              <h3 class="heading-tertiary heading-margin-bottom">
+                Complete History
+              </h3>
+              <p>
                 Retrieve any snippets from the first moment you started using
                 the app.
               </p>
             </div>
-          </section>
-        </article>
+          </div>
+        </div>
       </section>
       <!-- section two -->
-      <section class="sections section-two flex-align-center-column">
-        <h2 class="section-title page-titles">Access Clipboard anywhere</h2>
-        <p class="section-description page-paragraphs">
+      <section class="container">
+        <h2 class="heading-secondary heading-margin-bottom">
+          Access Clipboard anywhere
+        </h2>
+        <p class="content-center-sections margin-bottom-big">
           Whether you’re on the go, or at your computer, you can access all your
           Clipboard snippets in a few simple clicks.
         </p>
         <img
           src="/images/image-devices.png"
           alt=""
-          class="section-two-img img"
+          class="main__section-two-img img"
         />
       </section>
       <!-- section three -->
-      <section class="sections section-three flex-align-center-column">
-        <h2 class="section-title page-titles">Supercharge your workflow</h2>
-        <p class="section-description page-paragraphs">
+      <section class="container margin-bottom-big">
+        <h2 class="heading-secondary heading-margin-bottom">
+          Supercharge your workflow
+        </h2>
+        <p class="margin-bottom-medium">
           We’ve got the tools to boost your productivity.
         </p>
-        <article class="tools flex">
-          <div class="tool">
-            <img src="/images/icon-blacklist.svg" alt="" class="tool-img img" />
-            <h3 class="tools-title page-titles">Create blacklists</h3>
-            <p class="tools-description page-paragraphs">
+        <div class="grid-three-columns-responsive margin-bottom-big">
+          <div class="main__section-three-features-wrapper">
+            <img
+              src="/images/icon-blacklist.svg"
+              alt=""
+              class="main__section-three-img img"
+            />
+            <h3 class="heading-tertiary heading-margin-bottom">
+              Create blacklists
+            </h3>
+            <p>
               Ensure sensitive information never makes its way to your clipboard
               by excluding certain sources.
             </p>
           </div>
-          <div class="tool">
-            <img src="/images/icon-text.svg" alt="" class="tool-img img" />
-            <h3 class="tools-title page-titles">Plain text snippets</h3>
-            <p class="tools-description page-paragraphs">
+          <div class="main__section-three-features-wrapper">
+            <img
+              src="/images/icon-text.svg"
+              alt=""
+              class="main__section-three-img img"
+            />
+            <h3 class="heading-tertiary heading-margin-bottom">
+              Plain text snippets
+            </h3>
+            <p>
               Remove unwanted formatting from copied text for a consistent look.
             </p>
           </div>
-          <div class="tool">
-            <img src="/images/icon-preview.svg" alt="" class="tool-img img" />
-            <h3 class="tools-title page-titles">Sneak preview</h3>
-            <p class="tools-description page-paragraphs">
+          <div class="main__section-three-features-wrapper">
+            <img
+              src="/images/icon-preview.svg"
+              alt=""
+              class="main__section-three-img img"
+            />
+            <h3 class="heading-tertiary heading-margin-bottom">
+              Sneak preview
+            </h3>
+            <p>
               Quick preview of all snippets on your Clipboard for easy access.
             </p>
           </div>
-        </article>
+        </div>
       </section>
       <!-- section four -->
-      <section class="sections section-four flex-align-center-column">
-        <div class="company-logos-wrapper flex">
-          <img src="/images/logo-google.png" alt="" class="company-logos img" />
-          <img src="/images/logo-ibm.png" alt="" class="company-logos img" />
-          <img src="/images/logo-hp.png" alt="" class="company-logos img" />
-          <img
-            src="/images/logo-microsoft.png"
-            alt=""
-            class="company-logos img"
-          />
-          <img
-            src="/images/logo-vector-graphics.png"
-            alt=""
-            class="company-logos img"
-          />
+      <section class="container margin-bottom-big">
+        <div class="grid-five-columns-responsive">
+          <img src="/images/logo-google.png" alt="" class="img" />
+          <img src="/images/logo-ibm.png" alt="" class="img" />
+          <img src="/images/logo-hp.png" alt="" class="img" />
+          <img src="/images/logo-microsoft.png" alt="" class="img" />
+          <img src="/images/logo-vector-graphics.png" alt="" class="img" />
         </div>
       </section>
       <!-- section five -->
-      <section class="sections section-five flex-align-center-column">
-        <h2 class="section-title page-titles">Clipboard for iOS and Mac OS</h2>
-        <p class="section-description page-paragraphs">
+      <section class="container margin-bottom-big">
+        <h2 class="heading-secondary heading-margin-bottom">
+          Clipboard for iOS and Mac OS
+        </h2>
+        <p class="content-center-sections margin-bottom-medium">
           Available for free on the App Store. Download for Mac or iOS, sync
           with iCloud and you’re ready to start adding to your clipboard.
         </p>
-        <div class="buttons flex">
-          <button class="btn btn-ios">Download for iOS</button>
-          <button class="btn btn-mac">Download for Mac</button>
+        <div class="btn-wrapper">
+          <button class="btn btn--primary">Download for iOS</button>
+          <button class="btn btn--secondary">Download for Mac</button>
         </div>
       </section>
     </main>
     <!-- footer -->
-    <footer class="flex">
-      <div class="footer-container flex">
-        <img src="/images/logo.svg" alt="" class="clipboard-footer-logo img" />
-        <div class="contact-information">
-          <a href="#" class="links">FAQs</a>
-          <a href="#" class="links">Privacy Policy</a>
-          <a href="#" class="links">Install Guide</a>
-          <a href="#" class="links">Contact Us</a>
-          <a href="#" class="links">Press Kit</a>
+    <footer>
+      <div class="container footer__wrapper">
+        <img
+          src="/images/logo.svg"
+          alt="Clipboard - Copyright"
+          class="footer__img img"
+        />
+        <div>
+          <ul class="footer__list-wrapper">
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">FAQs</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Privacy Policy</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Install Guide</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Contact Us</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Press Kit</a>
+            </li>
+          </ul>
         </div>
-        <div class="social-icons-wrapper flex">
+        <div class="footer__icons-wrapper">
           <a href="#"
-            ><ion-icon name="logo-facebook" class="social-icons"></ion-icon
+            ><ion-icon
+              name="logo-facebook"
+              class="footer__link footer__icon"
+            ></ion-icon
           ></a>
           <a href="#"
-            ><ion-icon name="logo-twitter" class="social-icons"></ion-icon
+            ><ion-icon
+              name="logo-twitter"
+              class="footer__link footer__icon"
+            ></ion-icon
           ></a>
           <a href="#"
-            ><ion-icon name="logo-instagram" class="social-icons"></ion-icon
+            ><ion-icon
+              name="logo-instagram"
+              class="footer__link footer__icon"
+            ></ion-icon
           ></a>
         </div>
       </div>
